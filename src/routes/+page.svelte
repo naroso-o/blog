@@ -1,3 +1,9 @@
+<script>
+	import blog from '$lib/images/blog.jpeg';
+	import guitar from '$lib/images/guitar.jpeg';
+	import favorites from '$lib/images/favorites.jpeg';
+</script>
+
 <svelte:head>
 	<title>Home</title>
 	<meta name="description" content="Svelte demo app" />
@@ -23,17 +29,21 @@
 
 <div class="divider" />
 
-<secion>
-	<article class="prose">
-		<h2>Projects</h2>
-	</article>
-	<div>
-		<div class="card w-96 bg-base-100 shadow-xl">
-			<figure>
-				<img
-					src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-					alt="Shoes"
-				/>
+<article class="prose">
+	<h2>Projects</h2>
+</article>
+
+<secion
+	id="projects"
+	class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5"
+>
+	<div
+		id="projects-item1"
+		class="card w-96 bg-base-100 shadow-xl duration-500 hover:scale-105 hover:shadow-xl"
+	>
+		<a href="/projects/1">
+			<figure class="rounded-xl">
+				<img src={blog} alt="blog" />
 			</figure>
 			<div class="card-body">
 				<h2 class="card-title">
@@ -46,25 +56,51 @@
 					<div class="badge badge-outline">WEB</div>
 				</div>
 			</div>
+		</a>
+	</div>
+	<div id="projects-item2" class="card w-96 bg-base-300 shadow-xl">
+		<!-- <div
+		id="projects-item2"
+		class="card w-96 bg-base-300 shadow-xl duration-500 hover:scale-105 hover:shadow-xl"
+	> -->
+		<div>
+			<!-- <a href="/projects/2"> -->
+			<figure class="rounded-xl">
+				<img src={guitar} alt="guitar" />
+			</figure>
+			<div class="card-body">
+				<h2 class="card-title">Why are your fingers so clean?</h2>
+				<p>Guitar Practice Routine App</p>
+				<div class="card-actions justify-end">
+					<div class="badge badge-outline">To Do</div>
+					<div class="badge badge-outline">APP</div>
+				</div>
+			</div>
+			<!-- </a> -->
 		</div>
-		<div class="card w-96 bg-base-100 shadow-xl">
-			<figure>
-				<img
-					src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-					alt="Shoes"
-				/>
+	</div>
+	<div id="projects-item3" class="card w-96 bg-base-300 shadow-xl">
+		<!-- <div
+		id="projects-item3"
+		class="card w-96 bg-base-300 shadow-xl duration-500 hover:scale-105 hover:shadow-xl"
+	> -->
+		<div>
+			<!-- <a href="/projects/3"> -->
+			<figure class="rounded-xl">
+				<img src={favorites} alt="favorites" />
 			</figure>
 			<div class="card-body">
 				<h2 class="card-title">
-					Blog
+					Your Remains
 					<!-- <div class="badge badge-secondary">NEW</div> -->
 				</h2>
-				<p>Personal Technology Blog</p>
+				<p>Your own list sharing app</p>
 				<div class="card-actions justify-end">
-					<div class="badge badge-outline">SveltKit</div>
-					<div class="badge badge-outline">WEB</div>
+					<div class="badge badge-outline">To Do</div>
+					<div class="badge badge-outline">APP</div>
 				</div>
 			</div>
+			<!-- </a> -->
 		</div>
 	</div>
 </secion>
