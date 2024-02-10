@@ -1,7 +1,6 @@
 <script>
 	import '../app.pcss';
 	import Header from './Header.svelte';
-	import './styles.css';
 </script>
 
 <div class="app">
@@ -16,7 +15,7 @@
 	</footer>
 </div>
 
-<style>
+<!-- <style>
 	.app {
 		display: flex;
 		flex-direction: column;
@@ -51,4 +50,4 @@
 			padding: 12px 0;
 		}
 	}
-</style>
+</style> -->
