@@ -15,7 +15,7 @@
 	</footer>
 </div>
 
-<!-- <style>
+<style lang="">
 	.app {
 		display: flex;
 		flex-direction: column;
@@ -50,4 +50,4 @@
 			padding: 12px 0;
 		}
 	}
-</style> -->
+</style>
