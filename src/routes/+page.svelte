@@ -1,7 +1,13 @@
-<script>
+<script lang="ts">
 	import blog from '$lib/images/blog.jpeg';
 	import guitar from '$lib/images/guitar.jpeg';
 	import favorites from '$lib/images/favorites.jpeg';
+
+	let carouselElement: HTMLDivElement;
+
+	const carouselScroll = (toImage: number) => {
+		carouselElement.scrollTo(carouselElement.clientWidth * (toImage - 1) + 1, 0);
+	};
 </script>
 
 <svelte:head>
@@ -33,74 +39,74 @@
 	<h2>Projects</h2>
 </article>
 
-<secion
-	id="projects"
-	class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5"
->
-	<div
-		id="projects-item1"
-		class="card w-96 bg-base-100 shadow-xl duration-500 hover:scale-105 hover:shadow-xl"
-	>
-		<a href="/projects/1">
-			<figure class="rounded-xl">
-				<img src={blog} alt="blog" />
-			</figure>
-			<div class="card-body">
-				<h2 class="card-title">
-					Blog
-					<!-- <div class="badge badge-secondary">NEW</div> -->
-				</h2>
-				<p>Personal Technology Blog</p>
-				<div class="card-actions justify-end">
-					<div class="badge badge-outline">SveltKit</div>
-					<div class="badge badge-outline">WEB</div>
+<secion id="projects" class="mt-6 px-8">
+	<div class="carousel w-full" bind:this={carouselElement}>
+		<div id="projects-item1" class="carousel-item relative w-full">
+			<div class="card lg:card-side">
+				<figure>
+					<img src={blog} alt="blog" />
+				</figure>
+				<div class="card-body">
+					<h2 class="card-title">
+						Blog
+						<!-- <div class="badge badge-secondary">NEW</div> -->
+					</h2>
+					<p>Personal Technology Blog</p>
+					<div class="card-actions justify-end">
+						<div class="badge badge-outline">SveltKit</div>
+						<div class="badge badge-outline">WEB</div>
+					</div>
 				</div>
 			</div>
-		</a>
-	</div>
-	<div id="projects-item2" class="card w-96 bg-base-300 shadow-xl">
-		<!-- <div
-		id="projects-item2"
-		class="card w-96 bg-base-300 shadow-xl duration-500 hover:scale-105 hover:shadow-xl"
-	> -->
-		<div>
-			<!-- <a href="/projects/2"> -->
-			<figure class="rounded-xl">
-				<img src={guitar} alt="guitar" />
-			</figure>
-			<div class="card-body">
-				<h2 class="card-title">Why are your fingers so clean?</h2>
-				<p>Guitar Practice Routine App</p>
-				<div class="card-actions justify-end">
-					<div class="badge badge-outline">To Do</div>
-					<div class="badge badge-outline">APP</div>
-				</div>
+			<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+				<button class="btn btn-circle" on:click={() => carouselScroll(3)}>❮</button>
+				<button class="btn btn-circle" on:click={() => carouselScroll(2)}>❯</button>
 			</div>
-			<!-- </a> -->
 		</div>
-	</div>
-	<div id="projects-item3" class="card w-96 bg-base-300 shadow-xl">
-		<!-- <div
-		id="projects-item3"
-		class="card w-96 bg-base-300 shadow-xl duration-500 hover:scale-105 hover:shadow-xl"
-	> -->
-		<div>
-			<!-- <a href="/projects/3"> -->
-			<figure class="rounded-xl">
-				<img src={favorites} alt="favorites" />
-			</figure>
-			<div class="card-body">
-				<h2 class="card-title">
-					Your Remains
-					<!-- <div class="badge badge-secondary">NEW</div> -->
-				</h2>
-				<p>Your own list sharing app</p>
-				<div class="card-actions justify-end">
-					<div class="badge badge-outline">To Do</div>
-					<div class="badge badge-outline">APP</div>
+		<div id="projects-item2" class="carousel-item relative w-full">
+			<div class="card lg:card-side">
+				<figure>
+					<img src={guitar} alt="guitar" />
+				</figure>
+				<div class="card-body">
+					<h2 class="card-title">Why are your fingers so clean?</h2>
+					<p>Guitar Practice Routine App</p>
+					<div class="card-actions justify-end">
+						<div class="badge badge-outline">To Do</div>
+						<div class="badge badge-outline">APP</div>
+					</div>
+				</div>
+				<div
+					class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+				>
+					<button class="btn btn-circle" on:click={() => carouselScroll(1)}>❮</button>
+					<button class="btn btn-circle" on:click={() => carouselScroll(3)}>❯</button>
 				</div>
 			</div>
-			<!-- </a> -->
+		</div>
+		<div id="projects-item3" class="carousel-item relative w-full">
+			<div class="card lg:card-side">
+				<figure>
+					<img src={favorites} alt="favorites" />
+				</figure>
+				<div class="card-body">
+					<h2 class="card-title">
+						Your Remains
+						<!-- <div class="badge badge-secondary">NEW</div> -->
+					</h2>
+					<p>Your own list sharing app</p>
+					<div class="card-actions justify-end">
+						<div class="badge badge-outline">To Do</div>
+						<div class="badge badge-outline">APP</div>
+					</div>
+				</div>
+				<div
+					class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+				>
+					<button class="btn btn-circle" on:click={() => carouselScroll(2)}>❮</button>
+					<button class="btn btn-circle" on:click={() => carouselScroll(1)}>❯</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </secion>
