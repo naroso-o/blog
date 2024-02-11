@@ -107,30 +107,39 @@
 
 <div class="divider" />
 
+<article class="prose">
+	<h2>Posts</h2>
+</article>
+
 <secion>
-	<article class="prose">
-		<h2>Posts</h2>
-	</article>
-	<div>
-		<article class="prose">
-			<h3>Title 1</h3>
-			<p>
-				description description description description description description description
-				description description description description description description description
+	<div class="card w-96 bg-base-100">
+		<article class="card-body prose">
+			<h3 class="card-title">Virtual DOM 동작 원리</h3>
+			<p class="truncate ...">
+				Virtual DOM (VDOM)은 UI의 이상적인 또는 “가상”적인 표현을 메모리에 저장하고 ReactDOM과 같은
+				라이브러리에 의해 “실제” DOM과 동기화하는 프로그래밍 개념입니다. 이 과정을 재조정이라고
+				합니다.
 			</p>
 		</article>
-		<article class="prose">
-			<h3>Title 2</h3>
-			<p>
-				description description description description description description description
-				description description description description description description description
+	</div>
+	<div class="card">
+		<article class="card-body prose">
+			<h3 class="card-title">Svelt</h3>
+			<p class="truncate ...">
+				Svelte는 Rich Harris가 만들고 Svelte 핵심 팀 구성원이 유지 관리하는 무료 오픈 소스 프런트
+				엔드 구성 요소 프레임워크이자 언어입니다. Svelte는 애플리케이션에서 가져오는 모놀리식
+				JavaScript 라이브러리가 아닙니다.
 			</p>
 		</article>
-		<article class="prose">
-			<h3>Title 3</h3>
-			<p>
-				description description description description description description description
-				description description description description description description description
+	</div>
+	<div class="card">
+		<article class="card-body prose">
+			<h3 class="card-title">SSR</h3>
+			<p class="truncate ...">
+				서버 측 렌더링(SSR)은 웹 개발에서 클라이언트 측(즉, 사용자의 웹 브라우저) 대신 서버에서 웹
+				페이지를 렌더링하는 데 사용되는 기술입니다. 이 접근 방식에는 클라이언트 측 렌더링을 사용하여
+				브라우저에서 동적으로 콘텐츠를 생성하는 대신 서버에서 HTML, CSS 및 JavaScript 코드를
+				생성하고 이를 완전한 형태의 웹 페이지로 클라이언트에 보내는 작업이 포함됩니다.
 			</p>
 		</article>
 	</div>
