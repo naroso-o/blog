@@ -4,6 +4,9 @@ const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
+		fontFamily: {
+			'orbit': ['Orbit-Regular'],
+		},
 		extend: {}
 	},
 
