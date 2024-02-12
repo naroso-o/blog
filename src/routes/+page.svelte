@@ -15,11 +15,42 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section class="pt-64 pb-8">
-	<article class="prose">
+<section class="flex justify-between pt-64 pb-8">
+	<article class="prose max-w-lg">
 		<h1>Hello, I'm NA SO HYEON</h1>
 		<p>the Game-Loving Web Developer</p>
 	</article>
+	<ul class="max-w-sm space-y-4">
+		<li>
+			<a href="/" class="group transition duration-300 text-martinique-800"
+				>Home
+				<span
+					class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-martinique-900"
+				/></a
+			>
+		</li>
+		<li>
+			<a href="/about" class="group transition duration-300"
+				>About me<span
+					class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-martinique-900"
+				/></a
+			>
+		</li>
+		<li>
+			<a href="#projects" class="group transition duration-300"
+				>Projects<span
+					class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-martinique-900"
+				/></a
+			>
+		</li>
+		<li>
+			<a href="#posts" class="group transition duration-300"
+				>Posts<span
+					class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-martinique-900"
+				/></a
+			>
+		</li>
+	</ul>
 	<!-- <div>
 		<a href="https://www.linkedin.com/in/sohyeonna/">
 			<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
@@ -35,11 +66,11 @@
 
 <div class="divider py-16" />
 
-<article class="prose">
+<article id="projects" class="prose">
 	<h2>Projects</h2>
 </article>
 
-<secion id="projects" class="mt-6 px-8">
+<secion class="mt-6 px-8">
 	<div class="carousel w-full" bind:this={carouselElement}>
 		<div id="projects-item1" class="carousel-item relative w-full">
 			<div class="card lg:card-side">
@@ -113,7 +144,7 @@
 
 <div class="divider py-16" />
 
-<article class="prose">
+<article id="posts" class="prose">
 	<h2>Posts</h2>
 </article>
 
