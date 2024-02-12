@@ -22,12 +22,10 @@
 	</article>
 	<ul class="max-w-sm space-y-4">
 		<li>
-			<a href="/" class="group transition duration-300 text-martinique-800"
-				>Home
-				<span
-					class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-martinique-900"
-				/></a
-			>
+			<!-- <a href="/" class="group transition duration-300"> -->
+			<span class="cursor-default text-martinique-800"> Home </span>
+			<!-- <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-martinique-900" /> -->
+			<!-- </a> -->
 		</li>
 		<li>
 			<a href="/about" class="group transition duration-300"
