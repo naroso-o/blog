@@ -15,7 +15,7 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
+<section class="pt-64 pb-8">
 	<article class="prose">
 		<h1>Hello, I'm NA SO HYEON</h1>
 		<p>the Game-Loving Web Developer</p>
@@ -33,7 +33,7 @@
 	</div> -->
 </section>
 
-<div class="divider" />
+<div class="divider py-16" />
 
 <article class="prose">
 	<h2>Projects</h2>
@@ -111,7 +111,7 @@
 	</div>
 </secion>
 
-<div class="divider" />
+<div class="divider py-16" />
 
 <article class="prose">
 	<h2>Posts</h2>
@@ -151,7 +151,7 @@
 	</div>
 </secion>
 
-<div class="divider" />
+<!-- <div class="divider py-16" /> -->
 
 <!-- <secion>
 	<article class="prose">
