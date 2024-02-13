@@ -2,6 +2,10 @@
 	import '../app.pcss';
 	import Header from './Header.svelte';
 	import NavigationButton from '../components/NavigationButton.svelte';
+
+	import iconGit from '$lib/icons/icon-git.svg';
+	import iconIn from '$lib/icons/icon-in.svg';
+	import iconBlog from '$lib/icons/icon-blog.svg';
 </script>
 
 <div class="app">
@@ -20,8 +24,28 @@
 		</ul>
 	</div>
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+	<footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+		<nav class="grid grid-flow-col gap-4">
+			<a href="/" class="link link-hover">Home</a>
+			<a href="/about" class="link link-hover">About me</a>
+			<a href="/projects" class="link link-hover">Projects</a>
+			<a href="/posts" class="link link-hover">Posts</a>
+		</nav>
+		<nav>
+			<div class="grid grid-flow-col gap-4">
+				<a href="https://github.com/naroso-o" target="_blank"><img src={iconGit} alt="iconGit" /></a
+				>
+				<a href="https://www.linkedin.com/in/sohyeonna/" target="_blank"
+					><img src={iconIn} alt="iconIn" /></a
+				>
+				<a href="https://blog.naver.com/naroso25" target="_blank"
+					><img src={iconBlog} alt="iconBlog" /></a
+				>
+			</div>
+		</nav>
+		<aside>
+			<p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+		</aside>
 	</footer>
 </div>
 
