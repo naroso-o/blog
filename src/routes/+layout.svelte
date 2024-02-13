@@ -1,6 +1,7 @@
 <script>
 	import '../app.pcss';
 	import Header from './Header.svelte';
+	import NavigationButton from '../components/NavigationButton.svelte';
 </script>
 
 <div class="app">
@@ -10,12 +11,21 @@
 		<slot />
 	</main>
 
+	<div class="fixed top-32 right-24 pl-4 pr-16 py-4 text-left rounded-lg bg-slate-50">
+		<ul class="max-w-sm space-y-4">
+			<NavigationButton label={'Home'} url={'/'} />
+			<NavigationButton label={'Abouts'} url={'/about'} />
+			<NavigationButton label={'Projects'} url={'/projects'} />
+			<NavigationButton label={'Posts'} url={'/posts'} />
+		</ul>
+	</div>
+
 	<footer>
 		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
 	</footer>
 </div>
 
-<style lang="">
+<style lang="postcss">
 	.app {
 		display: flex;
 		flex-direction: column;

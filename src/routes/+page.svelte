@@ -20,46 +20,6 @@
 		<h1>Hello, I'm NA SO HYEON</h1>
 		<p>the Game-Loving Web Developer</p>
 	</article>
-	<ul class="max-w-sm space-y-4">
-		<li>
-			<!-- <a href="/" class="group transition duration-300"> -->
-			<span class="cursor-default text-martinique-800"> Home </span>
-			<!-- <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-martinique-900" /> -->
-			<!-- </a> -->
-		</li>
-		<li>
-			<a href="/about" class="group transition duration-300"
-				>About me<span
-					class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-martinique-900"
-				/></a
-			>
-		</li>
-		<li>
-			<a href="#projects" class="group transition duration-300"
-				>Projects<span
-					class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-martinique-900"
-				/></a
-			>
-		</li>
-		<li>
-			<a href="#posts" class="group transition duration-300"
-				>Posts<span
-					class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-martinique-900"
-				/></a
-			>
-		</li>
-	</ul>
-	<!-- <div>
-		<a href="https://www.linkedin.com/in/sohyeonna/">
-			<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-		  </a>
-		<a href="https://github.com/naroso-o">
-			<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-		  </a>
-		<a href="https://blog.naver.com/naroso25">
-			<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-		  </a>
-	</div> -->
 </section>
 
 <div class="divider py-16" />
