@@ -15,7 +15,7 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section class="flex justify-between pt-64 pb-8">
+<section class="flex justify-between pb-8 pt-64">
 	<article class="prose max-w-lg">
 		<h1>Hello, I'm NA SO HYEON</h1>
 		<p>the Game-Loving Web Developer</p>
@@ -47,7 +47,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+			<div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 				<button class="btn btn-circle" on:click={() => carouselScroll(3)}>❮</button>
 				<button class="btn btn-circle" on:click={() => carouselScroll(2)}>❯</button>
 			</div>
@@ -66,7 +66,7 @@
 					</div>
 				</div>
 				<div
-					class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+					class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
 				>
 					<button class="btn btn-circle" on:click={() => carouselScroll(1)}>❮</button>
 					<button class="btn btn-circle" on:click={() => carouselScroll(3)}>❯</button>
@@ -90,7 +90,7 @@
 					</div>
 				</div>
 				<div
-					class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+					class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
 				>
 					<button class="btn btn-circle" on:click={() => carouselScroll(2)}>❮</button>
 					<button class="btn btn-circle" on:click={() => carouselScroll(1)}>❯</button>
@@ -107,40 +107,44 @@
 </article>
 
 <secion>
-	<div class="card w-96 bg-base-100">
-		<article class="card-body prose">
-			<h3 class="card-title">Virtual DOM 동작 원리</h3>
-			<p class="truncate ...">
+	<article class="prose card card-body">
+		<h3 class="card-title">Virtual DOM 동작 원리</h3>
+		<p class="... truncate">
+			<span>2024.11.25</span><br />
+			<span class="">
 				Virtual DOM (VDOM)은 UI의 이상적인 또는 “가상”적인 표현을 메모리에 저장하고 ReactDOM과 같은
 				라이브러리에 의해 “실제” DOM과 동기화하는 프로그래밍 개념입니다. 이 과정을 재조정이라고
 				합니다.
-			</p>
-		</article>
-	</div>
-	<div class="card">
-		<article class="card-body prose">
-			<h3 class="card-title">Svelt</h3>
-			<p class="truncate ...">
+			</span>
+		</p>
+	</article>
+
+	<article class="prose card card-body">
+		<h3 class="card-title">Svelt</h3>
+		<p class="... truncate">
+			<span>2024.11.25</span><br />
+			<span class="">
 				Svelte는 Rich Harris가 만들고 Svelte 핵심 팀 구성원이 유지 관리하는 무료 오픈 소스 프런트
 				엔드 구성 요소 프레임워크이자 언어입니다. Svelte는 애플리케이션에서 가져오는 모놀리식
 				JavaScript 라이브러리가 아닙니다.
-			</p>
-		</article>
-	</div>
-	<div class="card">
-		<article class="card-body prose">
-			<h3 class="card-title">SSR</h3>
-			<p class="truncate ...">
+			</span>
+		</p>
+	</article>
+	<article class="prose card card-body">
+		<h3 class="card-title">SSR</h3>
+		<p class="... truncate">
+			<span>2024.11.25</span><br />
+			<span class="">
 				서버 측 렌더링(SSR)은 웹 개발에서 클라이언트 측(즉, 사용자의 웹 브라우저) 대신 서버에서 웹
 				페이지를 렌더링하는 데 사용되는 기술입니다. 이 접근 방식에는 클라이언트 측 렌더링을 사용하여
 				브라우저에서 동적으로 콘텐츠를 생성하는 대신 서버에서 HTML, CSS 및 JavaScript 코드를
 				생성하고 이를 완전한 형태의 웹 페이지로 클라이언트에 보내는 작업이 포함됩니다.
-			</p>
-		</article>
-	</div>
+			</span>
+		</p>
+	</article>
 </secion>
 
-<!-- <div class="divider py-16" /> -->
+<div class="divider pb-16" />
 
 <!-- <secion>
 	<article class="prose">
